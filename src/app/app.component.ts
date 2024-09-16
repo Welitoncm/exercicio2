@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { BindingComponent } from './binding/binding.component';
-import { FormsModule } from '@angular/forms';  // Importa o FormsModule
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [BindingComponent, FormsModule],  // Adicione o FormsModule e BindingComponent
+  imports: [BindingComponent, FormsModule],  
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
