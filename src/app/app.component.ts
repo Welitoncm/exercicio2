@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { BindingComponent } from './binding/binding.component';
+import { FormsModule } from '@angular/forms';  // Importa o FormsModule
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [BindingComponent, FormsModule],  // Adicione o FormsModule e BindingComponent
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exercicio2';
+  title = 'Atividade 2';
 }
